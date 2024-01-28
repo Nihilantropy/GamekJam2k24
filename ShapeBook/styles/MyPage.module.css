@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra i figli lungo l'asse trasversale (orizzontale) */
+    justify-content: center; /* Centra i figli lungo l'asse principale (verticale) */
+    height: 100vh;
+    max-width: 1080;
+    max-height: 1920;
+    background-image: url ("")
+  }
+  
+  .imageWrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* Larghezza completa dello schermo */
+    height: 50vh; /* Metà dell'altezza dello schermo */
+    transform: translateY(-60%);
+  }
+  
+  
+  .textBlock {
+    position: absolute;
+    margin: 40px;
+    flex-grow: 0;
+    font-family: 'Times New Roman', Times, serif;
+    transform: translateY(90%);
+  }
+  
+  .button {
+    position: absolute;
+    bottom: 50px; /* 20px dal fondo del container */
+    background-image: url ("../public/grafiche/Export/04-RichiamoGiocatori/RG-Sfoglia.svg");
+    height: auto;
+    width: fit-content;
+  }

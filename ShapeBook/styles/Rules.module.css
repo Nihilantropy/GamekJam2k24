@@ -1,0 +1,62 @@
+.main {
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer {
+    position: absolute;
+    max-width: 100%; /* Adatta la larghezza massima della box alle tue esigenze */
+    max-height: 100%;
+    margin: 0 auto; /* Centra la box */
+}
+
+.image {
+    width: 100%; /* Rendi l'immagine larga al 100% all'interno della box */
+    height: auto; /* Rendi l'altezza proporzionale alla larghezza */
+}
+
+.nextButton {
+    position: absolute;
+    top: 50%; /* Posizione al centro rispetto all'altezza */
+    left: 50%; /* Posizione al centro rispetto alla larghezza */
+    transform: translate(-50%, 450%); /* Sposta indietro di metà della larghezza e metà dell'altezza */
+    align-items: center;
+    width: 200px;
+    padding: 20px 200px;
+    background-color: #007bff;
+    cursor: pointer; /* Cambia il cursore per indicare che è cliccabile */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 2; /* Metti il bottone in primo piano */
+    opacity: 0; /* Rendi visibile il bottone */
+}
+
+@media (max-width: 600px) {
+    .nextButton {
+        padding: 15px 30px;
+    }
+}
+
+.rulesButton{
+    background-image: url('../public/selectplayericons/REGOLAMENTO.svg');
+    background-size: cover; /* o il valore che preferisci */
+    background-position: center;
+    /* position: absolute; */
+    height: 80px;
+    width: 70px;
+    z-index: 100; /* Assicura che il pulsante sia sopra gli altri elementi */
+    cursor: pointer; /* Cambia il cursore per indicare che è cliccabile */
+}
+
+.buttonContainer {
+    /* position: absolute; */
+    top: 50px;
+    right: 80px;
+    display: flex;
+    gap: 10px; /* Spazio tra i pulsanti */
+  }

@@ -1,0 +1,47 @@
+.settingButton {
+    background-image: url('../public/selectplayericons/IMPOSTAZIONI.svg');
+    background-size: cover; /* o il valore che preferisci */
+    background-position: center;
+    width: 80px;
+    height: 50px;
+    z-index: 100; 
+    cursor: pointer;
+    position: absolute top 20px right 20px;
+}
+
+.settingsPanel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.settingsPanel label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.settingsPanel input[type="range"] {
+    width: 100%;
+}
+
+.settingsPanel button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.settingsPanel button:hover {
+    background-color: #0056b3;
+}
